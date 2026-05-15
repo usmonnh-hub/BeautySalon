@@ -7,6 +7,7 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
+    --color-red-500: oklch(63.7% 0.237 25.331);
     --color-amber-50: oklch(98.7% 0.022 95.277);
     --color-taupe-50: oklch(98.6% 0.002 67.8);
     --color-black: #000;
@@ -171,6 +172,9 @@
   .m-auto {
     margin: auto;
   }
+  .mt-\[20px\] {
+    margin-top: 20px;
+  }
   .mt-\[30px\] {
     margin-top: 30px;
   }
@@ -180,6 +184,9 @@
   .mt-\[50px\] {
     margin-top: 50px;
   }
+  .mt-\[mt\] {
+    margin-top: mt;
+  }
   .mb-\[15px\] {
     margin-bottom: 15px;
   }
@@ -188,6 +195,12 @@
   }
   .mb-\[30px\] {
     margin-bottom: 30px;
+  }
+  .ml-\[20px\] {
+    margin-left: 20px;
+  }
+  .ml-\[30px\] {
+    margin-left: 30px;
   }
   .box-border {
     box-sizing: border-box;
@@ -222,6 +235,9 @@
   .w-\[90\%\] {
     width: 90%;
   }
+  .w-\[93\%\] {
+    width: 93%;
+  }
   .w-\[95\%\] {
     width: 95%;
   }
@@ -255,8 +271,20 @@
   .gap-50 {
     gap: calc(var(--spacing) * 50);
   }
+  .gap-\[0px\] {
+    gap: 0px;
+  }
+  .gap-\[20px\] {
+    gap: 20px;
+  }
+  .gap-\[40px\] {
+    gap: 40px;
+  }
   .gap-\[50px\] {
     gap: 50px;
+  }
+  .gap-\[60px\] {
+    gap: 60px;
   }
   .rounded-\[5px\] {
     border-radius: 5px;
@@ -311,8 +339,14 @@
   .bg-\[green\] {
     background-color: green;
   }
+  .bg-\[r\] {
+    background-color: r;
+  }
   .bg-\[red\] {
     background-color: red;
+  }
+  .bg-red-500 {
+    background-color: var(--color-red-500);
   }
   .bg-radial {
     --tw-gradient-position: in oklab;
@@ -351,14 +385,32 @@
   .pb-\[60px\] {
     padding-bottom: 60px;
   }
+  .pb-\[90px\] {
+    padding-bottom: 90px;
+  }
+  .pb-\[95px\] {
+    padding-bottom: 95px;
+  }
   .text-center {
     text-align: center;
+  }
+  .text-\[2px\] {
+    font-size: 2px;
   }
   .text-\[15px\] {
     font-size: 15px;
   }
+  .text-\[16px\] {
+    font-size: 16px;
+  }
   .text-\[17px\] {
     font-size: 17px;
+  }
+  .text-\[18px\] {
+    font-size: 18px;
+  }
+  .text-\[19px\] {
+    font-size: 19px;
   }
   .text-\[20px\] {
     font-size: 20px;
@@ -479,6 +531,16 @@
       margin-top: 70px;
     }
   }
+  .lg\:mt-\[90px\] {
+    @media (width >= 64rem) {
+      margin-top: 90px;
+    }
+  }
+  .lg\:ml-0 {
+    @media (width >= 64rem) {
+      margin-left: calc(var(--spacing) * 0);
+    }
+  }
   .lg\:block {
     @media (width >= 64rem) {
       display: block;
@@ -494,6 +556,71 @@
       display: none;
     }
   }
+  .lg\:w-\[0px\] {
+    @media (width >= 64rem) {
+      width: 0px;
+    }
+  }
+  .lg\:w-\[20px\] {
+    @media (width >= 64rem) {
+      width: 20px;
+    }
+  }
+  .lg\:w-\[50\%\] {
+    @media (width >= 64rem) {
+      width: 50%;
+    }
+  }
+  .lg\:w-\[80\%\] {
+    @media (width >= 64rem) {
+      width: 80%;
+    }
+  }
+  .lg\:w-\[100\%\] {
+    @media (width >= 64rem) {
+      width: 100%;
+    }
+  }
+  .lg\:w-\[200px\] {
+    @media (width >= 64rem) {
+      width: 200px;
+    }
+  }
+  .lg\:w-\[300px\] {
+    @media (width >= 64rem) {
+      width: 300px;
+    }
+  }
+  .lg\:w-\[400px\] {
+    @media (width >= 64rem) {
+      width: 400px;
+    }
+  }
+  .lg\:w-\[500\] {
+    @media (width >= 64rem) {
+      width: 500;
+    }
+  }
+  .lg\:w-\[500px\] {
+    @media (width >= 64rem) {
+      width: 500px;
+    }
+  }
+  .lg\:w-\[600px\] {
+    @media (width >= 64rem) {
+      width: 600px;
+    }
+  }
+  .lg\:w-\[700px\] {
+    @media (width >= 64rem) {
+      width: 700px;
+    }
+  }
+  .lg\:max-w-\[100px\] {
+    @media (width >= 64rem) {
+      max-width: 100px;
+    }
+  }
   .lg\:max-w-\[1200px\] {
     @media (width >= 64rem) {
       max-width: 1200px;
@@ -504,9 +631,19 @@
       max-width: 1400px;
     }
   }
+  .lg\:max-w-\[1500px\] {
+    @media (width >= 64rem) {
+      max-width: 1500px;
+    }
+  }
   .lg\:max-w-\[1600px\] {
     @media (width >= 64rem) {
       max-width: 1600px;
+    }
+  }
+  .lg\:max-w-\[7200px\] {
+    @media (width >= 64rem) {
+      max-width: 7200px;
     }
   }
   .lg\:flex-row {
